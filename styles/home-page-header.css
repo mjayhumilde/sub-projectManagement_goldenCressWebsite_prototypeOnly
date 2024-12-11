@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    padding-top: 56px;
+    font-family: "Mona+Sans";
+    color: rgba(210,172,109,255);
+    background-color: rgb(137, 0, 23);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width:500px) {
+    body{
+        padding: 0 40px;
+        padding-top: 60px;
+    }
+}
+@media (max-width:391px) {
+    body{
+        padding: 0 40px;
+        padding-top: 40px;
+    }
+}
+p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(137, 0, 23);
+    /* background-color: rgb(72.16% 0% 12.16%); */
+
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    height: 60px;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+
+
+    border-bottom: 4px solid rgb(209, 47, 47);
+}
+
+
+.golden-cress-logo{
+    width: 170px;
+}
+
+
+
+.header-middle-section{
+    width: 600px;
+}
+.header-middle-section ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.header-right-section i{
+    margin-left: 15px;
+}
+
+
+.line{
+    border: 0;
+    border-top: 4px solid rgb(209, 47, 47);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+}
+
+.header-container{
+    display: none;
+}
+
+
+
+
+/*IPAD*/
+@media (max-width:1024px) {
+    .header{
+        display: none;
+    }
+    .header-container{
+       display: block;
+    }
+}
+
+
+
+
+
+.header-container{
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.mobile-tab-header{
+    background-color: rgb(137, 0, 23);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+
+
+    border-bottom: 7px solid rgb(209, 47, 47);
+}
+.nav {
+    display: none; /* Initially hidden */
+    background-color: red;
+    transition: all 0.5s ease-in-out; /* Add transition here */
+    overflow: hidden; /* Prevent content overflow during animation */
+    height: 0; /* Set initial height to 0 for smooth appearance */
+  }
+  
+.nav.active {
+    display: block;
+    height: auto; /* Allow content to define height when active */
+  }
+.nav a{
+    text-decoration: none;
+    color: inherit;
+   
+}
+.navigations{
+    text-align: center;
+    font-size: 4vh;
+    background-color: rgb(137, 0, 23);
+    padding: 3vh 5vh;
+    border-bottom: 7px solid rgb(209, 47, 47);
+}
+.navigations:hover{
+    background-color: rgb(83, 8, 8);
+}
+.navigations:active{
+    opacity: 0.9;
+}
+.mobile-tab-header img{
+    width: 300px;
+}
+/*MOBILE PHONES*/
+@media (max-width:500px) {
+    .mobile-tab-header img{
+       width: 180px;
+    }
+    .mobile-tab-header{
+        padding: 12px 5px;
+        border-bottom: 4px solid rgb(209, 47, 47);
+    }
+    .navigations{
+        border-bottom: 4px solid rgb(209, 47, 47);
+    }
+}
+
+
+
+
+
+
+ /* Styling the menu button */
+ .menu-btn {
+    position: absolute;
+    z-index: 100;
+    right: 40px;
+    top: 55px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
+  /* Styling the hamburger lines */
+  .menu-btn .btn-line {
+    width: 60px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background:rgb(210, 172, 109);
+    transition: all 1s ease-out;
+  }
+
+  /* Adding transform to the X */
+  .menu-btn.close {
+    transform: rotate(180deg);
+  }
+
+  /* Styling the three lines to make it an X */
+  .menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+
+  @media (max-width:500px) {
+    .menu-btn .btn-line {
+        width: 40px;
+        height: 3px
+      }
+      .menu-btn{
+        top: 25px;
+        right: 1vh;
+      }
+      .navigations{
+        font-size: 30px;
+      }
+    
+  }

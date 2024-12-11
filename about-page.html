@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles/home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home-page-header.css" />
+    <link rel="stylesheet" href="styles/about-page.css" />
+    <link rel="stylesheet" href="styles/home-page.css" />
+    <title>About Page</title>
+
+    <style>
+      .book-table-feature-container{
+        background-image: url('images/table.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 80vh; 
+        width: 100%;
+        border: 1px solid rgba(210,172,109,255);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+        text-align: center;
+      } 
+      .book-table-feature-container h1{
+        font-size: 10vh;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+        margin-bottom: 2vh;
+      }
+      @media (max-width:1024px) { 
+        .book-table-feature-container h1{
+          font-size: 6vh;
+        }
+      }
+      @media (max-width:431px) { 
+        .book-table-feature-container h1{
+          font-size: 4.5vh;
+        }
+        .book-table-feature-container{
+          height: 65vh;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left-section">
+        <a href="">
+          <img
+            class="golden-cress-logo"
+            src="images/golden-cress-logo.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="header-middle-section">
+        <ul>
+          <li>
+            <a
+              style="text-decoration: none; color: rgba(210, 172, 109, 255)"
+              href="home-page.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              style="text-decoration: none; color: rgba(210, 172, 109, 255)"
+              href="about-page.html"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              style="text-decoration: none; color: rgba(210, 172, 109, 255)"
+              href="order-food-page.html"
+              >Order Food</a
+            >
+          </li>
+          <li>
+            <a 
+              style="text-decoration: none; color: rgba(210,172,109,255);" 
+              href="book-table-page.html"
+              >Book Table</a>
+            </li>
+        </ul>
+      </div>
+      <div class="header-right-section">
+        <a href="sign-up-page.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <div class="mobile-tab-header">
+        <a href="home-page.html"
+          ><img src="images/golden-cress-logo.png" alt="Golden Cress Logo"
+        /></a>
+        <!-- <i class="fa fa-bars js-hamburger-menu hamburger-img"></i> -->
+        <div class="menu-btn js-menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+      <div class="nav js-nav">
+        <a href="home-page.html"><div class="navigations">Home</div></a>
+        <a href="about-page.html"><div class="navigations">About Us</div></a>
+        <a href="order-food-page.html"><div class="navigations">Order Food</div></a>
+        <a href="book-table-page.html"><div class="navigations">Book Table</div></a>
+        <a href="sign-up-page.html"><div class="navigations">Login/Signup</div></a>
+      </div>
+    </div>
+
+
+
+    <div class="slideshow-container" id="backgound-img-container">
+    </div>
+
+
+
+    <div class="introduction-title-container">
+        <h1>Welcome to Golden Cress</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi expedita nulla odio veniam, veritatis voluptates exercitationem!
+            Autem ea quas facere quia asperiores, iusto temporibus repellat odio dicta officiis explicabo voluptatem?</p>
+    </div>
+
+
+    <div class="order-food-feature-container">
+        <div class="order-food-feature-title-description">
+            <h1>Order Food Online</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam eveniet labore modi! Voluptate nesciunt cupiditate,
+                 repellendus aperiam minima animi maiores incidunt at eaque libero, pariatur natus hic reiciendis quis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maxime quis! Vitae, iusto odit placeat consequatur dolores aliquam
+                 voluptate doloribus, omnis dignissimos consectetur esse nihil laboriosam, deserunt cumque quisquam explicabo.
+            </p>
+            <a href="order-food-page.html">
+                <button class="features-button">Order Now</button>
+            </a>
+        </div>
+        <div class="order-food-feature-image-container">
+            <img src="images/gallery-food-cutomer/gallery-food-7.webp" alt="">
+        </div>
+    </div>
+
+
+    <div class="book-table-feature-container">
+      <h1>Book your Dates in Golden Cress</h1>
+      <button class="features-button">Book Table</button>
+    </div>
+
+
+
+
+    
+    <div class="order-food-feature-container">
+      <div class="order-food-feature-image-container" id="our-team-image">
+      </div>
+      <div class="order-food-feature-title-description">
+        <h1>Our Story</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam eveniet labore modi! Voluptate nesciunt cupiditate,
+             repellendus aperiam minima animi maiores incidunt at eaque libero, pariatur natus hic reiciendis quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maxime quis! Vitae, iusto odit placeat consequatur dolores aliquam
+             voluptate doloribus, omnis dignissimos consectetur esse nihil laboriosam, deserunt cumque quisquam explicabo.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ut, voluptatibus aliquid dolor debitis magni
+              quaerat eius expedita. Ipsam tenetur eum atque minima necessitatibus a vitae non reiciendis ratione sed.
+        </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <a href="https://www.facebook.com/profile.php?id=100084202944581" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/goldencressrestaurant/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="footer-midle">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>5X3H+JQM, Olongapo - Bugallon Rd, Alaminos, Pangasinan</p>
+    </div>
+    <div class="footer-right">
+      <i class="fa-solid fa-phone"></i>
+     <p> 096969696969</p>
+    </div>
+  </div>
+
+  <div class="credit-container">
+    <hr class="credits-line">
+    <div class="credits">
+        <p>project management</p>
+        <p>group 1</p>
+        <p>©emjay humilde</p>
+      </div>
+ </div>
+
+   <script src="scripts/about-page.js" type="module"></script>
+  </body>
+</html>

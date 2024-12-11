@@ -1,0 +1,431 @@
+.landing-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+   display: block;
+   font-size: 6vw;
+}
+.description{
+    font-size: 1.20vw;
+    margin-bottom: 20px;
+}
+.ads-img{
+ display: flex;
+ justify-content: center;
+}   
+.ads-img img{
+    width: 100%;
+    height: auto;
+}
+
+.order-button{
+    display: block;
+    padding: 2vh 6vh;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 2.50vh;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgb(25, 25, 112);
+    color: rgb(165, 42, 42);
+    background-color: rgb(255, 245, 238);
+    transition: box-shadow 0.60s;
+}
+
+.order-button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgb(255, 245, 238);
+}
+.order-button:active{
+    opacity: 0.8;
+}
+
+/* IPAD PRO */
+@media (max-width: 1024px) {
+    .order-button{
+        padding: 1.40vh 3.50vh;
+        font-size: 1.80vh;
+    }
+    .landing-page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .intro{
+        font-size: 7vh;
+    }
+    .description{
+        font-size: 2vh;
+    }
+    .ads-img{
+        width: 800px;
+    }
+    .ads-img img{
+        object-fit: cover;
+    }
+  }
+
+
+ /*MOBILE PHONES*/
+@media (max-width:500px) {
+    .ads-img{
+        width: 430px;
+    }
+    .intro{
+        font-size: 5.0vh;
+    }
+    .description{
+        font-size: 1.90vh;
+    }
+}
+@media (max-width:391px) {
+    .ads-img{
+        width: 379px;
+    }
+   
+}
+
+
+
+
+.recommended-food-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 60px 0px;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.recommended-food-container img{
+    width: 270px;
+}
+.recommended-food-container div{
+    margin: auto;
+    text-align: center;
+}
+.recommended-food-name{
+    font-size: 30px;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.recommended-food-description{
+    display: block;
+    margin-top: 5px;
+}
+
+.order-now-button-ver2{
+    margin-top: 15px;
+    color: rgb(165, 42, 42);
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 11px 30px;
+    border-radius: 5px;
+    border-color: rgb(165, 42, 42);
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 0px 10px 0 rgb(165, 42, 42);
+    transition: background-color .50s;
+}
+.order-now-button-ver2:hover{
+    background-color: rgb(165, 42, 42);
+    color: white;
+}
+.order-now-button-ver2:active{
+    color: white;
+    opacity: 0.8;
+}
+/* IPAD PRO */
+@media(max-width: 1024px){
+    .recommended-food-container{
+        grid-template-columns: 1fr 1fr; 
+    }
+    .recommended-food-container > div:nth-child(3) {
+        grid-column: 1 / span 2; /* Span two columns */
+        justify-self: center; /* Center the child within the spanned columns */
+    }
+    .recommended-food-name{
+        font-size: 40px;
+        margin-top: 0;
+    }
+    
+}
+
+ /*MOBILE PHONES*/
+ @media (max-width:500px) {
+    .recommended-food-container{
+        grid-template-columns: 1fr;
+        padding: 30px 0;
+    }
+    .recommended-food-container > div:nth-child(3) {
+        grid-column: auto; /* Reset to default behavior */
+        justify-self: start; /* Align to start of the grid cell */
+    }
+    .recommended-food-name{
+        font-size: 30px;
+    }
+    .order-now-button-ver2{
+        margin-bottom: 30px;
+    }
+ }
+ 
+ 
+
+
+
+
+
+.why-choose-us-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.why-choose-us-image{
+    display: flex;
+    justify-content: center;
+}
+.why-choose-us-image img{
+    width: 100%;
+    height: auto;
+   
+}
+.why-choose-us-title{
+    font-size: 9vh;
+}
+
+.product-choose-container{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: center;
+}
+.circle-image-container{
+    height: 100px;
+    width: 106px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.circle-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.why-choose-name{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.product-choose-container-main{
+    display: flex;
+    justify-content: center;
+}
+/* IPAD PRO */
+@media (max-width: 1024px) {
+    
+    .why-choose-us-container{
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .why-choose-us-title{
+        font-size: 5.50vh;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .circle-image-container{
+        height: 150px;
+        width: 150px;
+    }
+    .circle-image-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .why-choose-name{
+        font-size: 40px;
+    }
+    .why-choose-description{
+        font-size: 15px;
+    }
+
+}
+
+/*MOBILE*/
+@media (max-width:500px) {
+    .why-choose-us-title{
+        font-size: 3.70vh;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .why-choose-name{
+        font-size: 25px;
+    }
+    .why-choose-description{
+        font-size: 12px;
+    }
+    .circle-image-container{
+        height: 100px;
+        width: 200px;
+    }
+    .circle-image-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .why-choose-us-container{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+.popular-food-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+    row-gap: 200px;
+}
+.background-box{
+    background-color: rgb(83, 8, 8);
+    height: 280px;
+    position: relative;
+}
+.popular-food-title{
+    display: block;
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.popular-food-description{
+    display: block;
+}
+.position-absolute-container{
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: -120px;
+}
+.popular-food-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-around;
+}
+
+/* @media(max-width: 1400px){
+    .popular-food-card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    .background-box{
+        height: 650px;
+    }
+    .food-card img{
+        width: 20px;
+    }
+} */
+.food-card{
+    background-color: white;
+    padding: 50px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.food-card img{
+    width: 100%;
+}
+.food-card-name{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.food-card-description{
+    display: block;
+    margin-bottom: 20px;
+}
+.food-card-price{
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(165, 42, 42);
+}
+/*IPAD PRO*/
+@media (max-width:1024px) {
+    .popular-food-container{
+        row-gap: 200px;
+    }
+    .popular-food-card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .background-box{
+        height: 875px;
+    }
+    .food-card-name{
+        font-size: 35px;
+    }
+    .food-card-description{
+        font-size: 25px;
+    }
+    .food-card-price{
+        font-size: 22px;
+    }
+    .popular-food-title{
+        font-size: 80px;
+    }
+    .popular-food-description{
+        font-size: 25px;
+    }
+}
+
+/*MOBILE*/
+@media (max-width:500px) {
+    .popular-food-container{
+        display: none;
+    }
+
+}
+
+
+
+
+.credit-container{
+    margin-top: 1vh;
+}
+.credits{
+    display: flex;
+    justify-content: space-between;
+}
+.credits p{
+    color: rgb(209, 47, 47);
+    font-size: 20px;
+}
+.credits-line{
+    border: 0;
+    border-top: 1px solid rgb(209, 47, 47);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+@media (max-width:500px) {
+    .credits p{
+        font-size: 12px;
+    }
+}
